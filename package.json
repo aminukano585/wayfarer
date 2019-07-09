@@ -1,0 +1,46 @@
+{
+  "name": "wayfarer",
+  "version": "1.0.0",
+  "description": "A public bus transportation booking server",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon --experimental-modules --es-module-specifier-resolution=node --no-warnings server.js",
+    "test": "NODE_ENV=test mocha --require esm",
+    "lint": "./node_modules/.bin/eslint --ext .js .",
+    "lint-fix": "./node_modules/.bin/eslint --fix --ext .js ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aminukano585/wayfarer.git"
+  },
+  "keywords": [
+    "wayfarer",
+    "public",
+    "bus",
+    "transportation",
+    "booking"
+  ],
+  "author": "aminukano",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aminukano585/wayfarer/issues"
+  },
+  "homepage": "https://github.com/aminukano585/wayfarer#readme",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb-base": "^13.2.0",
+    "eslint-plugin-import": "^2.18.0",
+    "mocha": "^6.1.4",
+    "nodemon": "^1.19.1"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.0.0",
+    "esm": "^3.2.25",
+    "express": "^4.17.1",
+    "uuid": "^3.3.2"
+  }
+}
